@@ -1,0 +1,82 @@
+.modal-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(39, 39, 39, 0.60);
+}
+
+.modal-container-show{
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 7.5px 7.5px 0px grey ;
+    animation: show 0.35s ease normal;
+}
+
+@keyframes show {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+.modal-container-hide{
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 7.5px 7.5px 0px grey ;
+    animation: hide 0.35s ease normal;
+}
+
+@keyframes hide {
+    to{
+        transform: scale(0);
+    }
+}
+
+.modal-content{
+    font-size: large;
+    font-weight: bold;
+    color: grey;
+}
+
+strong{
+    margin-block: 10px;
+    font-size:xx-large;
+    font-weight: bold;
+    color: black;
+}
+
+p{
+    margin-block: 15px;
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;       
+}
+
+button{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: solid 3px rgb(29, 29, 29);
+    background-color: grey;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:active{
+    background-color: rgb(41, 41, 41);
+}
